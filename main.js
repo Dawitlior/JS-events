@@ -68,33 +68,44 @@
 
 // 9.	צרו תוכנית לוטו, התוכנית מקבלת מהמשתמש מספר בין 0 ל - 56 ובעת לחיצה על כפתור מדפיסה אותו למסך, הפעולה קורית 5 פעמים. לאחר מכן, התוכנית מגרילה מספר בין 0 ל 56 ומדפיסה אותו למסך.
 
-var myArray  = [];
-function mainFunc() {
-    if(myArray.length < 5){
-        nums_user.innerText += "number : " + numberInput.value + ",";
-        myArray.push(user_number.value);
-        counter++        
+// var myArray  = [];
+// function mainFunc() {
+//     if(myArray.length < 5){
+//         nums_user.innerText += "number : " + numberInput.value + ",";
+//         myArray.push(user_number.value);
+//         counter++        
+//     }
+//     else{
+//         alert("you can not type anymore numbers")
+//     }
+// }
+// function getAndPrintRandom(){
+//     var rndNum = Math.floor(Math.random()*57);
+//     var ranH3 = document.getElementById("rnd_h3");
+//     ranH3.innerText +=rndNum  
+//     for(var i = 0 ; i<myArray.length ; i++){
+//         if(rndNum == myArray[i]){
+//     document.getElementById("result").innerText = "you win";return;
+// }
+//     document.getElementById("result").innerText = "you lose";
+//     }
+// }
+
+
+// תרגול בכיתה
+
+var numberArray = [34,45,3,2,3,5,66,78,44,23,23446,764]
+for(var i = 0 ; i<numberArray.length ; i++){
+    myDiv.innerHTML += "<div id = 'div_" + i + "'  style= 'color:red'>" + numberArray[i] + "</div>"   
+    changeColor(i);
+}
+
+function changeColor(i) {
+    if (numberArray[i] % 2 == 0) {
+        document.getElementById("div_" + i).style.color = "red";
     }
-    else{
-        alert("you can not type anymore numbers")
+    else {
+        document.getElementById("div_" + i).style.color = "blue";
     }
 }
-function getAndPrintRandom(){
-    var rndNum = Math.floor(Math.random()*57);
-    var ranH3 = document.getElementById("rnd_h3");
-    ranH3.innerText +=rndNum  
-    for(var i = 0 ; i<myArray.length ; i++){
-        if(rndNum == myArray[i]){
-    document.getElementById("result").innerText = "you win";return;
-}
-    document.getElementById("result").innerText = "you lose";
-    }
-}
-
-
-
-
-
-
-
 
