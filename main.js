@@ -94,18 +94,18 @@
 
 // תרגול בכיתה
 
-var numberArray = [34,45,3,2,3,5,66,78,44,23,23446,764]
-for(var i = 0 ; i<numberArray.length ; i++){
-    myDiv.innerHTML += "<div id = 'div_" + i + "'  style= 'color:red'>" + numberArray[i] + "</div>"   
-    changeColor(i);
-}
+// var numberArray = [34,45,3,2,3,5,66,78,44,23,23446,764]
+// for(var i = 0 ; i<numberArray.length ; i++){
+//     myDiv.innerHTML += "<div id = 'div_" + i + "'  style= 'color:red'>" + numberArray[i] + "</div>"   
+//     changeColor(i);
+// }
 
-function changeColor(i) {
-    if (numberArray[i] % 2 == 0) {
-        document.getElementById("div_" + i).style.color = "red";
-    }
-    else {
-        document.getElementById("div_" + i).style.color = "blue";
-    }
-}
+// function changeColor(i) {
+//     if (numberArray[i] % 2 == 0) {
+//         document.getElementById("div_" + i).style.color = "red";
+//     }
+//     else {
+//         document.getElementById("div_" + i).style.color = "blue";
+//     }
+// }
 
