@@ -28,19 +28,19 @@
 //     document.write(userName)
 // }
 
-function mySevenEvent(){
-    var myTime = new Date();
-    var theTimeNow = myTime.getHours();
-    if(theTimeNow < myTime){
-        document.body.style.backgroundColor = "yellow";
-        document.body.innerHTML = "<h1>"+"good day"+"<h1/>"
-    }
-    else{
-        document.body.style.backgroundColor = "blue";
-        document.body.innerHTML = "<h1>" + "good evening" + "<h1/>";
-    }
-}
-mySevenEvent();
+// function mySevenEvent(){
+//     var myTime = new Date();
+//     var theTimeNow = myTime.getHours();
+//     if(theTimeNow < myTime){
+//         document.body.style.backgroundColor = "yellow";
+//         document.body.innerHTML = "<h1>"+"good day"+"<h1/>"
+//     }
+//     else{
+//         document.body.style.backgroundColor = "blue";
+//         document.body.innerHTML = "<h1>" + "good evening" + "<h1/>";
+//     }
+// }
+// mySevenEvent();
 
 
 
@@ -68,19 +68,28 @@ mySevenEvent();
 
 // 9.	צרו תוכנית לוטו, התוכנית מקבלת מהמשתמש מספר בין 0 ל - 56 ובעת לחיצה על כפתור מדפיסה אותו למסך, הפעולה קורית 5 פעמים. לאחר מכן, התוכנית מגרילה מספר בין 0 ל 56 ומדפיסה אותו למסך.
 
-function getNumberAndPrint(){
-var first = document.getElementById("myBtn");
-for(var i = 0 ; i<5 ; i++){
-    first = prompt("type Number betwee 0-56");
-    document.body.innerHTML +="<br>" + first;
+var myArray  = [];
+function mainFunc() {
+    if(myArray.length < 5){
+        nums_user.innerText += "number : " + numberInput.value + ",";
+        myArray.push(user_number.value);
+        counter++        
+    }
+    else{
+        alert("you can not type anymore numbers")
+    }
 }
+function getAndPrintRandom(){
+    var rndNum = Math.floor(Math.random()*57);
+    var ranH3 = document.getElementById("rnd_h3");
+    ranH3.innerText +=rndNum  
+    for(var i = 0 ; i<myArray.length ; i++){
+        if(rndNum == myArray[i]){
+    document.getElementById("result").innerText = "you win";return;
 }
-function clickToLottyNumber(){
-    var second = getElementById("myBtn2");
-    second = Math.floor(Math.random()*56);
-    document.body.innerText = second;
+    document.getElementById("result").innerText = "you lose";
+    }
 }
-
 
 
 
