@@ -28,19 +28,19 @@
 //     document.write(userName)
 // }
 
-// function mySevenEvent(){
-//     var myTime = new Date();
-//     var theTimeNow = myTime.getHours();
-//     if(theTimeNow < myTime){
-//         document.body.style.backgroundColor = "yellow";
-//         document.body.innerHTML = "<h1>"+"good day"+"<h1/>"
-//     }
-//     else{
-//         document.body.style.backgroundColor = "blue";
-//         document.body.innerHTML = "<h1>" + "good evening" + "<h1/>";
-//     }
-// }
-// mySevenEvent();
+function mySevenEvent(){
+    var myTime = new Date();
+    var theTimeNow = myTime.getHours();
+    if(theTimeNow < myTime){
+        document.body.style.backgroundColor = "yellow";
+        document.body.innerHTML = "<h1>"+"good day"+"<h1/>"
+    }
+    else{
+        document.body.style.backgroundColor = "blue";
+        document.body.innerHTML = "<h1>" + "good evening" + "<h1/>";
+    }
+}
+mySevenEvent();
 
 
 
