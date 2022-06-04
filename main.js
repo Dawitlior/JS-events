@@ -93,19 +93,46 @@
 
 
 // תרגול בכיתה
+// function someFunc(numberArray){
+//     for(var i = 0 ; i<numberArray.length ; i++){
+//         myDiv.innerHTML += "<div id = 'div_" + i + "'  style= 'color:red'>" + numberArray[i] + "</div>"   
+//         changeColor(i,numberArray);
+//     }
+//     function changeColor(index , numsArray) {
+//         if (numberArray[index] % 2 == 0) {
+//             document.getElementById("div_" + i).style.color = "red";
+//         }
+//         else {
+//             document.getElementById("div_" + i).style.color = "blue";
+//         }
+//     }
+// }
+// someFunc(someArray);
 
-// var numberArray = [34,45,3,2,3,5,66,78,44,23,23446,764]
-// for(var i = 0 ; i<numberArray.length ; i++){
-//     myDiv.innerHTML += "<div id = 'div_" + i + "'  style= 'color:red'>" + numberArray[i] + "</div>"   
-//     changeColor(i);
+
+
+
+
+// 1.	צרו תוכנית שבעת עלייה מקבלת מהמשתמש שם ותאריך לידה, אם המשתמש מעל 18 מדפיסה למסך הודעה של ברוכים הבאים למסך בכחול ואת שם המשתמש אחרת הודעת אין כניסה באדום עם גיף מתאים( *אתגר - ומרעננת את הדף).
+
+// var put1 = document.getElementById("input1");
+// var put2 = document.getElementById("input2");
+// var p1 = document.getElementById("myp1");
+// var myTim = document.getElementById("myTime");
+// myTim = new Date("2002");
+// btn1.onclick = function printWithColor(){
+// myTim.innerHTML = put2.value
+//     if(put2.getFullYear().value < 18 ){
+//     document.myTime.innerHTML = "vdsgbrsbrsbgvfdsb"
+//     }
+//     else{
+    
+    
+//     }
+
 // }
 
-// function changeColor(i) {
-//     if (numberArray[i] % 2 == 0) {
-//         document.getElementById("div_" + i).style.color = "red";
-//     }
-//     else {
-//         document.getElementById("div_" + i).style.color = "blue";
-//     }
-// }
+function 
+
+
 
